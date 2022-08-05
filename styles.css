@@ -18,6 +18,13 @@ body {
   grid-template-columns: 200px auto;
 }
 
+.ts-table {
+  overflow-y: scroll;
+  height: 500px;
+  border-right: 1px solid var(--table-border);
+  border-bottom: 1px solid var(--table-border);
+}
+
 /* search bar. */
 .table-header {
   background-color: #f5f5f6;
