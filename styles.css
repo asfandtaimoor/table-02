@@ -21,6 +21,7 @@ body {
 .ts-table {
   overflow-y: scroll;
   height: 500px;
+
   border-right: 1px solid var(--table-border);
   border-bottom: 1px solid var(--table-border);
 }
@@ -142,6 +143,7 @@ table th {
 @media screen and (max-width: 991px) {
   table {
     border: 0;
+    min-width: 250px;
   }
   tr:not(:last-child) {
     border-bottom: none;
