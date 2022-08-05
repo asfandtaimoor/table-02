@@ -13,6 +13,10 @@ body {
   padding: 12px;
 }
 
+.table-section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .ts-table-container {
   display: grid;
   grid-template-columns: 200px auto;
