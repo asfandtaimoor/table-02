@@ -5,105 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="table-header">
-      <div class="search-box">
-        <button class="search-button">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="#97979f"
-            class="bi bi-search"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-            />
-          </svg>
-        </button>
-        <input type="text" class="search-input" placeholder="Search.." />
+    <div class="container">
+      <div class="table-header">
+        <div class="search-box">
+          <button class="search-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#97979f"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </button>
+          <input type="text" class="search-input" placeholder="Search.." />
+        </div>
+      </div>
+      <div class="ts-table-container">
+        <aside class="ts-aside">
+          <ul class="ts-nav-list">
+            <li class="active">Everone</li>
+          </ul>
+          <ul class="ts-nav-list">
+            <li class="ts-nav-list__title">Onboarding</li>
+            <li>Staged</li>
+            <li>Pending user action</li>
+          </ul>
+          <ul class="ts-nav-list">
+            <li class="ts-nav-list__title">Active</li>
+            <li>Active</li>
+            <li>Password reset</li>
+            <li>Locked out</li>
+          </ul>
+          <ul class="ts-nav-list">
+            <li class="ts-nav-list__title">Inactive</li>
+            <li>Suspended</li>
+            <li>Deavtivated</li>
+          </ul>
+        </aside>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Person & username</th>
+              <th scope="col">Primary email</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table__data-row">
+              <td data-label="Person & username">
+                <div>
+                  <p class="ts-user-name">Mary Beth</p>
+                  <p class="ts-user-email">mbeth@verify.com</p>
+                </div>
+              </td>
+
+              <td data-label="Primary email">mbeth@verify.com</td>
+              <td data-label="Status">Active</td>
+            </tr>
+            <tr class="table__data-row">
+              <td data-label="Person & username">
+                <div>
+                  <p class="ts-user-name">Mary Beth</p>
+                  <p class="ts-user-email">mbeth@verify.com</p>
+                </div>
+              </td>
+
+              <td data-label="Primary email">mbeth@verify.com</td>
+              <td data-label="Status">Active</td>
+            </tr>
+            <tr class="table__data-row">
+              <td data-label="Person & username">
+                <div>
+                  <p class="ts-user-name">Mary Beth</p>
+                  <p class="ts-user-email">mbeth@verify.com</p>
+                </div>
+              </td>
+
+              <td data-label="Primary email">mbeth@verify.com</td>
+              <td data-label="Status">Active</td>
+            </tr>
+            <tr class="table__data-row">
+              <td data-label="Person & username">
+                <div>
+                  <p class="ts-user-name">Mary Beth</p>
+                  <p class="ts-user-email">mbeth@verify.com</p>
+                </div>
+              </td>
+
+              <td data-label="Primary email">mbeth@verify.com</td>
+              <td data-label="Status">Active</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-    <div class="ts-table-container">
-      <aside class="ts-aside">
-        <ul class="ts-nav-list">
-          <li class="active">Everone</li>
-        </ul>
-        <ul class="ts-nav-list">
-          <li class="ts-nav-list__title">Onboarding</li>
-          <li>Staged</li>
-          <li>Pending user action</li>
-        </ul>
-        <ul class="ts-nav-list">
-          <li class="ts-nav-list__title">Active</li>
-          <li>Active</li>
-          <li>Password reset</li>
-          <li>Locked out</li>
-        </ul>
-        <ul class="ts-nav-list">
-          <li class="ts-nav-list__title">Inactive</li>
-          <li>Suspended</li>
-          <li>Deavtivated</li>
-        </ul>
-      </aside>
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Person & username</th>
-            <th scope="col">Primary email</th>
-            <th scope="col">Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="table__data-row">
-            <td data-label="Person & username">
-              <div>
-                <p class="ts-user-name">Mary Beth</p>
-                <p class="ts-user-email">mbeth@verify.com</p>
-              </div>
-            </td>
 
-            <td data-label="Primary email">mbeth@verify.com</td>
-            <td data-label="Status">Active</td>
-          </tr>
-          <tr class="table__data-row">
-            <td data-label="Person & username">
-              <div>
-                <p class="ts-user-name">Mary Beth</p>
-                <p class="ts-user-email">mbeth@verify.com</p>
-              </div>
-            </td>
-
-            <td data-label="Primary email">mbeth@verify.com</td>
-            <td data-label="Status">Active</td>
-          </tr>
-          <tr class="table__data-row">
-            <td data-label="Person & username">
-              <div>
-                <p class="ts-user-name">Mary Beth</p>
-                <p class="ts-user-email">mbeth@verify.com</p>
-              </div>
-            </td>
-
-            <td data-label="Primary email">mbeth@verify.com</td>
-            <td data-label="Status">Active</td>
-          </tr>
-          <tr class="table__data-row">
-            <td data-label="Person & username">
-              <div>
-                <p class="ts-user-name">Mary Beth</p>
-                <p class="ts-user-email">mbeth@verify.com</p>
-              </div>
-            </td>
-
-            <td data-label="Primary email">mbeth@verify.com</td>
-            <td data-label="Status">Active</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
