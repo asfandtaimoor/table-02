@@ -146,6 +146,9 @@ table th {
   tr:not(:last-child) {
     border-bottom: none;
   }
+  tr:last-child {
+    border-bottom: none;
+  }
   .ts-table-container {
     display: grid;
     grid-template-columns: 180px auto;
